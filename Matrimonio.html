@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matrimonio Davide & Giada</title>
+<style>
+:root {
+--menta: #b2f0e8;
+--menta-scuro: #76dcd1;
+--testo: #333;
+--sfondo: #f8fdfc;
+--bianco: #ffffff;
+}
+
+body {
+margin: 0;
+font-family: 'Georgia', serif;
+background-color: var(--sfondo);
+color: var(--testo);
+}
+
+header {
+background-color: var(--menta);
+padding: 40px 20px;
+text-align: center;
+}
+
+header h1 {
+margin: 0;
+font-size: 3em;
+color: #2e2e2e;
+}
+
+nav {
+background-color: var(--menta-scuro);
+display: flex;
+justify-content: center;
+padding: 15px 0;
+}
+
+nav a {
+color: #fff;
+text-decoration: none;
+margin: 0 20px;
+font-weight: bold;
+font-size: 1.1em;
+}
+
+nav a:hover {
+text-decoration: underline;
+}
+
+section {
+padding: 60px 20px;
+max-width: 900px;
+margin: auto;
+}
+
+section h2 {
+text-align: center;
+margin-bottom: 30px;
+font-size: 2em;
+color: #2c2c2c;
+}
+
+.rsvp-form {
+background-color: var(--bianco);
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+max-width: 600px;
+margin: 0 auto;
+}
+
+.rsvp-form label {
+display: block;
+margin-top: 15px;
+font-weight: bold;
+}
+
+.rsvp-form input, .rsvp-form textarea {
+width: 100%;
+padding: 10px;
+margin-top: 5px;
+border-radius: 5px;
+border: 1px solid #ccc;
+font-family: inherit;
+}
+
+.rsvp-form button {
+background-color: var(--menta-scuro);
+color: white;
+padding: 10px 20px;
+border: none;
+margin-top: 20px;
+cursor: pointer;
+border-radius: 5px;
+font-size: 1em;
+}
+
+footer {
+background-color: var(--menta);
+text-align: center;
+padding: 20px;
+font-size: 0.9em;
+}
+
+@media(max-width: 600px) {
+header h1 {
+font-size: 2em;
+}
+
+nav {
+flex-direction: column;
+}
+
+nav a {
+margin: 10px 0;
+}
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Davide & Giada</h1>
+<p>Ci sposiamo!</p>
+</header>
+
+<nav>
+<a href="#benvenuto">Home</a>
+<a href="#storia">La nostra storia</a>
+<a href="#dettagli">Il matrimonio</a>
+<a href="#lista">Lista nozze</a>
+<a href="#rsvp">RSVP</a>
+</nav>
+
+<section id="benvenuto">
+<h2>Benvenuti!</h2>
+<p>Siamo felici di condividere con voi il giorno più bello della nostra vita. In questo sito troverete tutte le informazioni sul nostro matrimonio.</p>
+</section>
+
+<section id="storia">
+<h2>La nostra storia</h2>
+<p>Ci siamo conosciuti nel 2016, e da allora non ci siamo più lasciati. Abbiamo riso, viaggiato, affrontato sfide insieme. Ora siamo pronti a dire il nostro "Sì".</p>
+</section>
+
+<section id="dettagli">
+<h2>Dettagli del matrimonio</h2>
+<p> <strong>Cerimonia:</strong> Villa Verde, Lago di Como - ore 16:00<br>
+ <strong>Ricevimento:</strong> a seguire nella stessa location<br>
+ Dress code: elegante</p>
+</section>
+
+<section id="lista">
+<h2>Lista Nozze</h2>
+<p>Il regalo più bello sarà la vostra presenza, ma se volete contribuire al nostro viaggio di nozze, ecco i dettagli:</p>
+<ul>
+<li>IBAN: IT00A0000000000000000000000</li>
+<li>Intestato a: Davide Moretti e Giada Rossi</li>
+<li>Causale: Regalo matrimonio</li>
+</ul>
+</section>
+
+<section id="rsvp">
+<h2>Conferma la tua presenza</h2>
+<form class="rsvp-form">
+<label for="nome">Nome e cognome:</label>
+<input type="text" id="nome" name="nome" required>
+
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+
+<label for="messaggio">Messaggio (opzionale):</label>
+<textarea id="messaggio" name="messaggio" rows="4"></textarea>
+
+<button type="submit">Invia conferma</button>
+</form>
+</section>
+
+<footer>
+<p>&copy; 2025 Davide & Giada – Con amore e menta </p>
+</footer>
+
+</body>
+</html>
